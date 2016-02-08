@@ -1,3 +1,8 @@
 <?php
 
-$toto = "toto";
+
+include_once "Controller/FrontController.php";
+
+use Controller\FrontController;
+
+$controller = new FrontController();
