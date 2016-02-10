@@ -2,7 +2,9 @@
 
 namespace Controller;
 
-abstract class AbstractController {
+use src\connection;
+
+abstract class AbstractController extends connection {
 
     public function render($data = null, $view) {
 
