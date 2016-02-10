@@ -1,7 +1,14 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hugoLambrinidis
- * Date: 10/02/16
- * Time: 00:55
- */
+
+namespace Controller;
+
+class ViewController {
+
+    private $data;
+
+    public function __construct($data, $file) {
+        $this->data = $data;
+        include_once $file;
+    }
+
+}
