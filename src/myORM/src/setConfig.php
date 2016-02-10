@@ -36,22 +36,5 @@ class setConfigs
         if ($model_path) $conf->model_path = $model_path;
         if (!is_dir($model_path) && $model_path != null) mkdir($model_path);
         file_put_contents(__DIR__."/config.json", json_encode($conf));
-        /*
-        if (is_array($db_config) && is_array($logs_config) && $model_path != null){
-
-            $config = [
-                "db_config" => $db_config,
-                "logs_config" => $logs_config,
-                "model_path" => $model_path
-            ];
-            file_put_contents(__DIR__."/config.json", json_encode($config));
-
-            if ( !is_dir($model_path) ) {
-                mkdir($model_path);
-            }
-
-        } else {
-            connection::$setLogs->addLog(["error" => "un paramètre n'a pas été spécifié."]);
-        }*/
     }
 }
