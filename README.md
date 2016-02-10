@@ -3,7 +3,7 @@
 
 Generateur de controller =>
 
-php /src/ControllerGen/ControllerGenerator.php $namespace $name $viewName $getterSetter $variables*x
+php /src/ControllerGen/ControllerGenerator.php namespace name viewName getterSetter variables * x
 
 Orm =>
     définir paramètre de connexion bdd :
@@ -20,4 +20,4 @@ Orm =>
 
     générer une table + modèle :
 
-    php /src/myORM/index.php generate tableName (cols type) * x
+    php /src/myORM/index.php generate tableName { col type } * x
