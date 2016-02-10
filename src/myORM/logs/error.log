@@ -1,0 +1,11 @@
+18-12-2015 12:58:57 : ::1 failed to execute alter table `abonnements` add `toto` VARCHAR(255) because the query has already been executed
+18-12-2015 13:14:51 : ::1 failed to execute : SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = `cinema` AND TABLE_NAME = `abonnements` LIMIT 1
+18-12-2015 13:15:37 : ::1 failed to execute : SELECT * FROM `INFORMATION_SCHEMA.TABLES` WHERE `TABLE_SCHEMA` = `cinema` AND `TABLE_NAME` = `abonnements` LIMIT 1
+18-12-2015 13:15:38 : ::1 failed to execute : SELECT * FROM `INFORMATION_SCHEMA.TABLES` WHERE `TABLE_SCHEMA` = `cinema` AND `TABLE_NAME` = `abonnements` LIMIT 1
+18-12-2015 13:15:49 : ::1 failed to execute : SELECT * FROM `INFORMATION_SCHEMA.TABLES` WHERE `TABLE_SCHEMA` = `cinema` AND `TABLE_NAME` = `abonnements` LIMIT 1
+10-02-2016 02:56:23 : ::1 failed to execute : SELECT * FROM `INFORMATION_SCHEMA.TABLES` WHERE `TABLE_SCHEMA` = `ass-mat` AND `TABLE_NAME` = `user` LIMIT 1
+10-02-2016 03:00:44 : ::1 failed to execute : SELECT * FROM `INFORMATION_SCHEMA.TABLES` WHERE `TABLE_SCHEMA` = `ass-mat` AND `TABLE_NAME` = `user` LIMIT 1
+10-02-2016 03:06:34 : ::1 failed to execute : SHOW TABLES WHERE Tables_in_ass_mat = `user` LIMIT 1
+10-02-2016 03:07:20 : ::1 failed to execute : SHOW TABLES FROM ass-mat WHERE Tables_in_ass_mat = `user` LIMIT 1
+10-02-2016 03:12:47 : ::1 failed to execute : SHOW TABLES FROM ass-mat WHERE Tables_in_ass_mat = `user` LIMIT 1
+10-02-2016 03:13:11 : ::1 failed to execute : SHOW TABLES FROM ass-mat WHERE Tables_in_ass_mat = `user` LIMIT 1

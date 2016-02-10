@@ -1,0 +1,14 @@
+{
+  "db_config": {
+    "host":"localhost",
+    "user":"kora",
+    "passwd":"trofie2502",
+    "driver":"mysql",
+    "db":"ass-mat"
+  },
+  "logs_config":{
+    "sql":"\/logs\/access.log",
+    "error":"\/logs\/error.log"
+  },
+  "set_model_path" : ""
+}
