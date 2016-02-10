@@ -2,41 +2,53 @@
 
 require_once "vendor/autoload.php";
 
-use src\setConfigs;
 use src\connection;
-use src\table;
-use src\queryBuilder;
+use Generator\TableGenerator;
 
 connection::getConnection();
 
-$toto = connection::$conn;
-setConfigs::setConfigs(["host" => "localhost",
-      "user" => "kora",
-      "passwd" => "trofie2502",
-      "driver" => "mysql",
-      "db" => "ass-mat"], [
-      "sql" => "/logs/access.log",
-      "error" => "/logs/error.log"
-]);
-$tables = new table();
-var_dump($tables->getTables());
-$query = new queryBuilder();
-$query
-    ->update($tables->getTable("user")['table_name'])
-    ->cols("user_name")
-    ->bindValues("polo")
-    ->where("user_id = 1")
-    ->sendQuery();
-
-$query
-    ->insert($tables->getTable("user")['table_name'])
-    ->cols(["user_name", "user_surname", "user_password"])
-    ->bindValues(["pol", "polo", "toto"])
-    ->sendQuery();
-
-$query
-    ->delete($tables->getTable("user")['table_name'])
-    ->where("user_name = 'pol'")
-    ->sendQuery();
-
-var_dump($query->select($tables->getTable("user")['table_name'], ['user_name', 'user_id'])->sendQuery());
+switch ($argv[1]) {
+    case "config" :
+        switch ($argv[2]) {
+            case "db" :
+                $db_config = [
+                    "host" => $argv[3],
+                    "user" => $argv[4],
+                    "passwd" => $argv[5],
+                    "driver" => $argv[6],
+                    "db" => $argv[7]
+                ];
+                connection::setConfigs($db_config);
+                break;
+            case "logs" :
+                $logs_config = [
+                    "sql" => $argv[3],
+                    "error" => $argv[4]
+                ];
+                connection::setConfigs(null, $logs_config);
+                break;
+            case "model_path" :
+                $model_path = $argv[3];
+                connection::setConfigs(null, null, $model_path);
+                break;
+            default :
+                echo "you should choose a parameter to edit !";
+                break;
+        }
+        break;
+    case "generate" :
+        $cols = [];
+        $type = [];
+        for ($i = 3; $i < sizeof($argv); $i++) {
+            if ($i % 2 != 0) {
+                $cols[] = $argv[$i];
+            } else {
+                $type[] = $argv[$i];
+            }
+        }
+        new TableGenerator($argv[2], $cols, $type);
+        break;
+    default:
+        echo "you meant generate or db, don't you ?";
+        break;
+}

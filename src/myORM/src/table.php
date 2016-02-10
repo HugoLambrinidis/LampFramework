@@ -53,16 +53,19 @@ class table extends connection
 
     public function addTable($table, $cols, $types)
     {
-        $query = "create table".$table."(";
+        $query = "create table $table (";
         for ($i = 0; $i < count($cols); $i++) {
-            $query = $query." ".$cols[$i]." ".$types[$i].",";
+            if ($i < sizeof($cols) -1) {
+                $query = $query." ".$cols[$i]." ".$types[$i].",";
+            } else {
+                $query = $query." ".$cols[$i]." ".$types[$i];
+            }
         }
         $query = $query.")";
-
         try {
             $request = self::$conn
-                ->query($query);
-            if ($request != false) {
+            ->query($query);
+            if (is_object($request)) {
                 $request->execute();
                 connection::$setLogs->addLog(["sql" => connection::$userIp." executed : ".$query]);
             }

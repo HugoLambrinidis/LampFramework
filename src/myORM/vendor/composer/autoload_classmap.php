@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Generator\\TableGenerator' => $baseDir . '/Generator/TableGenerator.php',
     'logs\\logs' => $baseDir . '/logs/logs.php',
     'src\\connection' => $baseDir . '/src/connection.php',
     'src\\queryBuilder' => $baseDir . '/src/queryBuilder.php',

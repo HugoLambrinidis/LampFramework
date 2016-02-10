@@ -495,3 +495,73 @@
 10-02-2016 06:17:15 : ::1 executed : SELECT table_name FROM information_schema.tables WHERE table_type = 'base table'
                   AND table_schema='ass-mat' AND table_name = 'user'
 10-02-2016 06:17:15 : ::1 executed : select user_name, user_id from user
+10-02-2016 06:56:53 : ::1 is connected to ass-mat@localhost
+10-02-2016 06:56:53 : ::1 executed : SHOW TABLES
+10-02-2016 06:56:53 : ::1 executed : SELECT table_name FROM information_schema.tables WHERE table_type = 'base table'
+                  AND table_schema='ass-mat' AND table_name = 'user'
+10-02-2016 06:56:53 : ::1 executed :  UPDATE user SET user_name = 'polo'  where user_id = 1
+10-02-2016 06:56:53 : ::1 executed : SELECT table_name FROM information_schema.tables WHERE table_type = 'base table'
+                  AND table_schema='ass-mat' AND table_name = 'user'
+10-02-2016 06:56:53 : ::1 executed :  INSERT INTO user (user_name, user_surname, user_password )  values ('pol', 'polo', 'toto' ) 
+10-02-2016 06:56:53 : ::1 executed : SELECT table_name FROM information_schema.tables WHERE table_type = 'base table'
+                  AND table_schema='ass-mat' AND table_name = 'user'
+10-02-2016 06:56:53 : ::1 executed :  DELETE FROM user where user_name = 'pol'
+10-02-2016 06:56:53 : ::1 executed : SELECT table_name FROM information_schema.tables WHERE table_type = 'base table'
+                  AND table_schema='ass-mat' AND table_name = 'user'
+10-02-2016 06:56:53 : ::1 executed : select user_name, user_id from user
+10-02-2016 06:57:18 : ::1 is connected to ass-mat@localhost
+10-02-2016 07:00:51 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 07:01:37 : ::1 is connected to ass-mat@localhost
+10-02-2016 07:02:11 : ::1 is connected to ass-mat@localhost
+10-02-2016 07:02:41 : ::1 is connected to ass-mat@localhost
+10-02-2016 07:18:05 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 07:41:37 : ::1 is connected to ass-mat@localhost
+10-02-2016 08:40:51 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 08:42:03 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 08:42:39 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 08:49:37 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 08:51:27 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 08:51:27 : UNKNOWN executed : create table toto ( user_name varchar(255), user_age int)
+10-02-2016 08:52:26 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 08:57:17 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 08:57:41 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 08:57:41 : UNKNOWN executed : create table tata ( user_name varchar(255), user_age int)
+10-02-2016 08:58:41 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 08:58:41 : UNKNOWN executed : create table titi ( user_name varchar(255), user_age int)
+10-02-2016 08:59:21 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 08:59:21 : UNKNOWN executed : create table toutou ( user_name varchar(255), user_age int)
+10-02-2016 09:00:24 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 09:00:24 : UNKNOWN executed : create table lol ( user_name varchar(255), user_age int)
+10-02-2016 09:00:51 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 09:00:51 : UNKNOWN executed : create table loool ( user_name varchar(255), user_age int)
+10-02-2016 09:01:11 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 09:01:21 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 09:01:21 : UNKNOWN executed : create table lool ( user_name varchar(255), user_age int)
+10-02-2016 09:32:50 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 09:32:50 : UNKNOWN executed : create table users ( user_name varchar(255), user_age int)
+10-02-2016 09:33:10 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 09:33:47 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 09:33:47 : UNKNOWN created ass-mat@localhost and get connected to it
+10-02-2016 09:33:47 : UNKNOWN executed : create table users ( user_name varchar(255), user_age int)
+10-02-2016 09:40:09 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 09:40:09 : UNKNOWN created ass-mat@localhost and get connected to it
+10-02-2016 09:40:09 : UNKNOWN executed : create table users ( user_name varchar(255), user_age int)
+10-02-2016 09:41:25 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 09:41:25 : UNKNOWN created ass-mat@localhost and get connected to it
+10-02-2016 09:41:25 : UNKNOWN executed : create table users ( user_name varchar(255), user_age int)
+10-02-2016 09:44:14 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 09:44:14 : UNKNOWN created ass-mat@localhost and get connected to it
+10-02-2016 09:44:14 : UNKNOWN executed : create table users ( user_name varchar(255), user_age int)
+10-02-2016 09:48:28 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 09:48:28 : UNKNOWN created ass-mat@localhost and get connected to it
+10-02-2016 09:48:28 : UNKNOWN executed : create table users ( user_name varchar(255), user_age int)
+10-02-2016 09:52:20 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 09:52:20 : UNKNOWN created ass-mat@localhost and get connected to it
+10-02-2016 09:52:20 : UNKNOWN executed : create table users ( user_name varchar(255), user_age int)
+10-02-2016 09:53:50 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 09:53:50 : UNKNOWN created ass-mat@localhost and get connected to it
+10-02-2016 09:53:50 : UNKNOWN executed : create table users ( user_name varchar(255), user_age int)
+10-02-2016 09:54:32 : UNKNOWN is connected to ass-mat@localhost
+10-02-2016 09:54:32 : UNKNOWN created ass-mat@localhost and get connected to it
+10-02-2016 09:54:32 : UNKNOWN executed : create table users ( user_name varchar(255), user_age int)
+10-02-2016 10:01:16 : ::1 is connected to ass-mat@localhost

@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'src\\' => array($baseDir . '/src'),
     'logs\\' => array($baseDir . '/logs'),
+    'Generator\\' => array($baseDir . '/Generator'),
 );

@@ -11,6 +11,7 @@ class connection extends setConfigs
     public static $userIp = null;
     public static $db_config = null;
     public static $logs_config = null;
+    protected static $model_path;
 
 
     private static function connect($config)
@@ -56,16 +57,21 @@ class connection extends setConfigs
     {
         self::parseConfig();
         self::connect(self::$db_config);
-        var_dump(self::$db_config["db"]);
         return self::$conn;
     }
 
     private static function parseConfig()
     {
         $configs = json_decode(file_get_contents(__DIR__."/config.json"), true);
-        self::$db_config = $configs["db_config"];
-        self::$logs_config = $configs["logs_config"];
+        self::$db_config = $configs['db_config'];
+        self::$logs_config = $configs['logs_config'];
+        self::$model_path = $configs['model_path'];
         logs::setLogsPath(self::$logs_config);
+    }
+
+    protected  function getModelPath()
+    {
+        return self::$model_path;
     }
 
 }

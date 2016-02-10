@@ -9,3 +9,18 @@
 10-02-2016 03:07:20 : ::1 failed to execute : SHOW TABLES FROM ass-mat WHERE Tables_in_ass_mat = `user` LIMIT 1
 10-02-2016 03:12:47 : ::1 failed to execute : SHOW TABLES FROM ass-mat WHERE Tables_in_ass_mat = `user` LIMIT 1
 10-02-2016 03:13:11 : ::1 failed to execute : SHOW TABLES FROM ass-mat WHERE Tables_in_ass_mat = `user` LIMIT 1
+10-02-2016 06:56:53 : un paramètre n'a pas été spécifié.
+10-02-2016 08:40:51 : UNKNOWN failed to execute create tablegenerate( user_name varchar, user_age int,)
+10-02-2016 08:40:51 : UNKNOWN failed to execute : create tablegenerate( user_name varchar, user_age int,) and got : 
+10-02-2016 08:42:03 : UNKNOWN failed to execute create table generate ( user_name varchar, user_age int,)
+10-02-2016 08:42:03 : UNKNOWN failed to execute : create table generate ( user_name varchar, user_age int,) and got : 
+10-02-2016 08:42:39 : UNKNOWN failed to execute create table toto ( user_name varchar, user_age int,)
+10-02-2016 08:42:39 : UNKNOWN failed to execute : create table toto ( user_name varchar, user_age int,) and got : 
+10-02-2016 08:49:37 : UNKNOWN failed to execute create table toto ( user_name varchar(255), user_age int,)
+10-02-2016 08:49:37 : UNKNOWN failed to execute : create table toto ( user_name varchar(255), user_age int,) and got : 
+10-02-2016 08:57:17 : UNKNOWN failed to execute create table toto ( user_name varchar(255), user_age int)
+10-02-2016 08:57:17 : UNKNOWN failed to execute : create table toto ( user_name varchar(255), user_age int) and got : 
+10-02-2016 09:01:11 : UNKNOWN failed to execute create table loool ( user_name varchar(255), user_age int)
+10-02-2016 09:01:11 : UNKNOWN failed to execute : create table loool ( user_name varchar(255), user_age int) and got : 
+10-02-2016 09:33:10 : UNKNOWN failed to execute create table users ( user_name varchar(255), user_age int)
+10-02-2016 09:33:10 : UNKNOWN failed to execute : create table users ( user_name varchar(255), user_age int) and got : 

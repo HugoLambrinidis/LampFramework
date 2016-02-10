@@ -2,7 +2,8 @@
   "autoload": {
     "psr-4": {
       "src\\" : "src/",
-      "logs\\" : "logs/"
+      "logs\\" : "logs/",
+      "Generator\\" : "Generator/"
     }
   }
 }
