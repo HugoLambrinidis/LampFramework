@@ -1,7 +1,6 @@
 <?php
 
-
-include_once "Controller/FrontController.php";
+include_once "vendor/autoload.php";
 
 use Controller\FrontController;
 

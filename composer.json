@@ -1,0 +1,10 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Controller\\": "Controller/",
+      "Exceptions\\": "Exceptions/",
+      "Routing\\": "Routing/",
+      "Site\\": "Site/"
+    }
+  }
+}
