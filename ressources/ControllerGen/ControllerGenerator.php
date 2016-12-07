@@ -2,6 +2,7 @@
 
 include_once "ControllerConf.php";
 
+
 $namespace = $argv[1];
 $name = $argv[2];
 $viewName = $argv[3];

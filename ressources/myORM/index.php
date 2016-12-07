@@ -1,7 +1,5 @@
 <?php
 
-require_once "vendor/autoload.php";
-
 use src\connection;
 use Generator\TableGenerator;
 
